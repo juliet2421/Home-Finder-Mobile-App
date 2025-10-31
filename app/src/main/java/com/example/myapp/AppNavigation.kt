@@ -21,6 +21,7 @@ import androidx.navigation.navArgument
 import com.example.myapp.ui.screens.BookHouseScreen
 import com.example.myapp.ui.screens.ForgotPasswordScreen
 import com.example.myapp.ui.screens.HomeScreen
+import com.example.myapp.ui.screens.LandScreen
 import com.example.myapp.ui.screens.PaymentScreen
 import com.example.myapp.ui.screens.SignInScreen
 import com.example.myapp.ui.screens.SignUpScreen
@@ -34,7 +35,7 @@ fun MyApp() {
 
     Scaffold(
         topBar = {
-            if (currentRoute != "signin") { // Don't show app bar on signin screen
+            if (currentRoute != "signin" && currentRoute != "land") { // Don't show app bar on signin or land screen
                 TopAppBar(
                     title = { Text(text = currentRoute?.split("/")?.get(0)?.replaceFirstChar { it.uppercase() } ?: "") },
                     navigationIcon = {
@@ -51,9 +52,12 @@ fun MyApp() {
     ) { innerPadding ->
         NavHost(
             navController = navController,
-            startDestination = "signin",
+            startDestination = "land",
             modifier = Modifier.padding(innerPadding)
         ) {
+            composable("land") {
+                LandScreen(navController = navController)
+            }
             composable("signin") {
                 SignInScreen(navController = navController)
             }

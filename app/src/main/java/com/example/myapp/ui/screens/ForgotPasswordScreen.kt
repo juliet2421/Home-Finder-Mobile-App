@@ -43,7 +43,8 @@ fun ForgotPasswordScreen(navController: NavController) {
         Spacer(modifier = Modifier.height(16.dp))
         Button(
             onClick = { /* TODO: Handle password reset */ navController.navigateUp() },
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF87CEEB))
+            colors = ButtonDefaults.buttonColors(containerColor = Color.Black),
+            modifier = Modifier.fillMaxWidth()
         ) {
             Text("Reset Password")
         }

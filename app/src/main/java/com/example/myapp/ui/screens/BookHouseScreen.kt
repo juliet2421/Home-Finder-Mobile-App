@@ -32,7 +32,7 @@ fun BookHouseScreen(navController: NavController, houseName: String?) {
         Spacer(modifier = Modifier.height(16.dp))
         Button(
             onClick = { navController.navigate("payment") },
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF87CEEB))
+            colors = ButtonDefaults.buttonColors(containerColor = Color.Black)
         ) {
             Text("Proceed to Payment")
         }

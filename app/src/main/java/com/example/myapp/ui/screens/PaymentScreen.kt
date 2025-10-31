@@ -32,7 +32,7 @@ fun PaymentScreen(navController: NavController) {
         Button(
             onClick = { /* TODO: Implement Bank payment */ },
             modifier = Modifier.fillMaxWidth(),
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF87CEEB))
+            colors = ButtonDefaults.buttonColors(containerColor = Color.Black)
         ) {
             Text("Bank")
         }
@@ -40,7 +40,7 @@ fun PaymentScreen(navController: NavController) {
         Button(
             onClick = { /* TODO: Implement TNM Mpamba payment */ },
             modifier = Modifier.fillMaxWidth(),
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF87CEEB))
+            colors = ButtonDefaults.buttonColors(containerColor = Color.Black)
         ) {
             Text("TNM Mpamba")
         }
@@ -48,7 +48,7 @@ fun PaymentScreen(navController: NavController) {
         Button(
             onClick = { /* TODO: Implement Airtel Money payment */ },
             modifier = Modifier.fillMaxWidth(),
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF87CEEB))
+            colors = ButtonDefaults.buttonColors(containerColor = Color.Black)
         ) {
             Text("Airtel Money")
         }
@@ -56,7 +56,7 @@ fun PaymentScreen(navController: NavController) {
         Button(
             onClick = { /* TODO: Implement PayChangu payment */ },
             modifier = Modifier.fillMaxWidth(),
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF87CEEB))
+            colors = ButtonDefaults.buttonColors(containerColor = Color.Black)
         ) {
             Text("PayChangu")
         }
